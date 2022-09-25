@@ -14,7 +14,6 @@ function AppFormField({ name, ...otherProps }) {
         onChangeText={handleChange(name)}
         {...otherProps}
       />
-
       <ErrorMessage error={errors[name]} visible={touched[name]} />
     </>
   );
