@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import ListingEditScreen from "./app/screens/ListingEditScreen";
+import RegisterScreen from "./app/screens/RegisterScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
   // const [firstName , setFirstName] = useState('');

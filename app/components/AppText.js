@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import { Text } from 'react-native';
+import { Text } from "react-native";
 
-import defaulStyles from '../config/style'
+import defaulStyles from "../config/style";
 
-
-
-function AppText({children , style}) {
-    return  <Text style={[defaulStyles.text , style]}>{children}</Text>
-    
+function AppText({ children, style, ...otherProps }) {
+  return (
+    <Text style={[defaulStyles.text, style]} {...otherProps}>
+      {children}
+    </Text>
+  );
 }
 
 export default AppText;
-
 
 // const styles = StyleSheet.create({
 //     // text:{
@@ -20,4 +20,3 @@ export default AppText;
 //     //     fontFamily: Platform.OS === 'android' ? 'Roboto' : 'Avenir',
 //     // }
 // })
-
